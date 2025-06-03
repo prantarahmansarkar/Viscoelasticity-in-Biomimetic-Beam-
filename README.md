@@ -1,18 +1,63 @@
-Contour_plot.m: the matlab file generates the contour figures plotted in Fig. 7. The raw data is given in xlsx files in Figs. 7(a)-(b), Fig. 7(c). Fig. 7(d). 
+# 📘 Viscoelasticity in Biomimetic Beam
 
-Couette_flow_beam.m: contains the MATLAB code of Eq. (5) for constant \psi_dot
+This repository contains the MATLAB source codes and raw datasets used for generating the results presented in the manuscript:
 
-Couette_flow_beam_sinusoidal_curvature.m: contains the MATLAB code of Eq. (5) for sinusoidal \psi
+**"Viscoelasticity of Biomimetic Scale Beams from Trapped Complex Fluids"**
 
-Couette_flow_beam_variable_Omega_Omega_n.m: contains the matlab code of RED results with variable Omega/Omega_n.
+---
 
-Couette_flow_beam_variable_alphaL.m: contains the matlab code of RED results with variable \alpha_L.
+## 📂 MATLAB Scripts
 
-Couette_flow_beam_variable_alphaL_delta_L.m: Calculate the RED factor of Fig. 6. 
+- **`Contour_plots.m`**  
+  Generates the contour plots shown in **Figure 7**. Associated raw data:
+  - `Figs. 7(a)-(b).xlsx`
+  - `Fig. 7(c).xlsx`
+  - `Fig. 7(d).xlsx`
 
-Couette_flow_beam_variable_deltaL.m: contains the matlab code of RED results with variable \delta_L.
+- **`Couette_flow_beam.m`**  
+  Implements Eq. (5) for constant shear rate `ψ̇`.
 
-Couette_flow_beam_variable_eta_new.m: contains the matlab code of RED results with variable \eta.
+- **`Couette_flow_beam_sinusoidal_curvature.m`**  
+  Implements Eq. (5) for sinusoidal curvature input `ψ(t)`.
 
+- **`Couette_flow_beam_variable_Omega_Omega_n.m`**  
+  Simulates RED behavior for varying `Ω/Ωₙ`.
 
-Fig. 2.xlsx, Fig. 3(a).xlsx, Fig. 3(b).xlsx, Fig. 3(c)-(d).xlsx, Figs. 4-5.xlsx contains data of the corresponding Figures.
+- **`Couette_flow_beam_variable_alphaL.m`**  
+  Computes RED factor for different values of `αL`.
+
+- **`Couette_flow_beam_variable_alphaL_delta_L.m`**  
+  Used to generate **Figure 6**, examining combined variation of `αL` and `δL`.
+
+- **`Couette_flow_beam_variable_deltaL.m`**  
+  Calculates RED for varying `δL`.
+
+- **`Couette_flow_beam_variable_eta_new.m`**  
+  Computes RED results for varying scale overlap `η`.
+
+---
+
+## Excel Data Files
+
+- `Fig. 2.xlsx`  
+- `Fig. 3(a).xlsx`  
+- `Fig. 3(b).xlsx`  
+- `Fig. 3(c)-(d).xlsx`  
+- `Figs. 4-5.xlsx`  
+
+These files contain the raw numerical data used to plot Figures 2–5.
+
+---
+
+## Notes
+
+- All figures and trends in the manuscript can be reproduced using the provided scripts and datasets.
+- Scripts are commented for clarity and use standard MATLAB functions.
+- No special toolboxes are required beyond core MATLAB functionality.
+
+---
+
+## Citation
+
+If you use this code, please cite the corresponding manuscript once published.
+
